@@ -1,0 +1,161 @@
+body {
+    background-color: black
+}
+
+ul {
+    list-style-type: none;
+}
+
+.to-do-item {
+    border: 2px solid blue;
+    padding: 20px;
+    width: 80%;
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.items-list {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: azure;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    font-family: sans-serif;
+    height: 100vh
+}
+
+.projects-list {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.project-item {
+    border: 2px solid blue;
+    padding: 20px;
+    background-color: azure;
+    margin: 5px;
+    width: 75%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+button {
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.projects-list, .items-list p {
+    font-weight: bold;
+}
+
+.project-item ul {
+    padding: 10px;
+    list-style: square;
+    list-style: none;
+}
+
+.item-detail-title, .item-detail-date {
+    margin: 5px 5px 5px 5px;
+}
+
+.assigned-to-project-item {
+    margin: 5px;
+    border: 2px solid orange;
+    background-color: white;
+    color: blue;
+    text-align: left;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: darkslategray;;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    color: white;
+    font-size: larger;
+    font-family: fantasy;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-top: 10px;
+  }
+
+  form button {
+    margin-top: 15px;
+  }
+
+  form input {
+    height: 30px;
+  }
+
+  form select {
+    height: 30px;
+  }
+
+  .item-content-wrapper {
+    width: 90%;
+  }
+
+  .actions-wrapper {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .actions-wrapper button {
+    width: 100%;
+  }
